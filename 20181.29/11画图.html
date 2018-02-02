@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+            body{background: black;}
+            #canvas{
+                background:white;
+            }
+        </style>
+	</head>
+	<body>
+	    <canvas id="canvas" width="400" height="400"></canvas>
+	    <script type="text/javascript">
+	    	var oc=document.querySelector('canvas');
+	    	var oGc=oc.getContext('2d');
+	    	var x;
+	    	var y;
+	    	oc.onmousedown=function(ev){
+	    	    var ev=ev||window.event;
+	    	    var x=ev.clientX;
+	    	    var y=ev.clientY;
+	    	    oGc.moveTo(x,y);
+	    	    oGc.strokeStyle='red'
+	    	    oc.onmousemove=function(ev){
+	    	        var ev=ev||window.event;
+                oGc.lineTo(ev.clientX,ev.clientY);
+                oGc.stroke();
+	    	    }
+	    	    document.onmouseup=function(){
+	    	        oc.onmousemove=document.onmouseup=null;
+	    	    }
+	    	}
+	    </script>
+	</body>
+</html>

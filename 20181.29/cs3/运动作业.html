@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		ul,li{
+		    list-style: none;}
+		*{margin: 0;padding: 0;}
+		
+		div{
+		    width: 900px;
+		    height: 100px;
+		    border: 2px solid #0000FF;
+		    position: relative;
+		    overflow: hidden;
+		    margin: 100px auto;
+		}
+			ul{
+			    width: 200%;
+			    height: 100px;
+			    margin: 0 ;
+			    animation: change 5s infinite linear;
+			    position: absolute;
+			    left: 0;
+			}
+			li{
+			    float: left;
+			}
+			img{
+			    display:block;
+			    width: 150px;
+			    height: 100px;
+			}
+			@keyframes change{
+				from{left: 0;}
+				to{left: -900px;}
+			}
+		</style>
+	</head>
+	<body>
+	    <div style="border-left: none;border-right: none;">
+    	    <ul>
+                <li><img src="../img/1.jpg"/></li>
+    	    	<li><img src="../img/2.jpg"/></li>
+    	    	<li><img src="../img/3.jpg"/></li>
+    	    	<li><img src="../img/4.jpg"/></li>
+    	    	<li><img src="../img/5.jpg"/></li>
+    	    	<li><img src="../img/6.jpg"/></li>
+    	    	<li><img src="../img/1.jpg"/></li>
+                <li><img src="../img/2.jpg"/></li>
+                <li><img src="../img/3.jpg"/></li>
+                <li><img src="../img/4.jpg"/></li>
+                <li><img src="../img/5.jpg"/></li>
+                <li><img src="../img/6.jpg"/></li>
+    	    </ul>
+	    </div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+			    width: 200px;
+			    height: 200px;
+			    border: 1px solid #000000;
+			    /*text-indent:2em;*/
+			}
+			
+			/*第一行*/
+			p:first-line{
+			    color: red;
+			}
+			/*第一个字*/
+			p:first-letter{
+			    font-size: 30px;
+			}
+			/*更改选中区域的背景颜色   字体颜色*/
+			p::selection{
+			    background: green;
+			    color:red ;
+			}
+			p:before{
+			    content: '呵呵';
+			}
+			p:after{
+			    content: '陈德成贱贱';
+			    color: deepskyblue;
+			    font-size: 20px;
+			}
+			
+			span{
+                font-size: 50px;
+                display: block;
+                width: 300px;
+                height: 300px;
+                margin: 100px auto;
+                color:white; font-size:100px;
+                 text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+                /*<!--text-shadow: ;      横向偏移   纵向偏移    模糊程度  颜色           可叠加 -->*/
+            }
+                
+		</style>
+	</head>
+	<body>
+	    <!--伪类
+	        
+	        a:link定义正常链接样式     a:visited定义已访问过的样式    a:hover鼠标悬浮时的样式     a:active鼠标点击时的样式
+	        
+	    -->
+	    <p>阿女过的个啥第三方盛大的身份把第三个报表符合我我勃发USA东方闪电 时代感我不过大安保的税率广八路十点半V领空间的撒部分基本的撒付额外a胜多负少的发顺丰大法师打的说法撒旦撒地方</p>
+	    
+	    
+	     <span>朱明森</span>
+	</body>
+</html>

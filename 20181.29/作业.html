@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+			    width:400px;
+			    height: 400px;
+			    border: 2px solid #ccc;
+			    margin: 100px auto;
+			}
+		</style>
+	</head>
+	<body>
+	    <div class="box"></div>
+	    <script type="text/javascript">
+	    	var odiv=document.querySelector('div');
+//	    	odiv.ondragenter=function(){
+//	    	    this.innerHTML='请松开鼠标释放';
+//	    	}
+	    	odiv.ondragover=function(ev){
+              var  ev=ev||window.event;
+              ev.preventDefault();
+    }
+//	    	odiv.ondragleave=function(){
+//          this.innerHTML='请将文件拖放到此处';
+//           }
+	    	odiv.ondrop=function(ev){
+          var  ev=ev||window.event;
+          ev.preventDefault();
+    
+          var fs=ev.dataTransfer.files;
+          for(var i=0;i<fs.length;i++){
+            //  读取文件
+            if(fs[i].type.indexOf('image')!=-1){
+               var  fd= new FileReader();
+            //  读取文件里面的内容
+            fd.readAsDataURL(fs[i]);
+            //  如果读取成功  onload事件
+            fd.onload=function(){
+              //console.log(this.result);
+              var img1=document.createElement('img');
+              img1.style.width='50px';
+              img1.style.height='50px';
+              img1.src=this.result;
+              odiv.appendChild(img1);
+        }
+            }
+//          else{
+//              var fd=new FileReader();
+//              fd.readAsText(fs[i],'gb2312');
+//              fd.onload=function(){
+//                  var op=document.createElement('p');
+//                  op.style.width='300px';
+//                  op.style.height='300px';
+//                  op.innerHTML=this.result;
+//                  document.body.appendChild(op);
+//              }
+//          }
+                else if(fs[i].type.indexOf('image')==-1){
+                alert('禁止添加txt');
+                 }
+            
+
+      }
+    }
+	    </script>
+	</body>
+</html>

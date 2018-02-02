@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{
+			    list-style: none;
+			    width: 200px;
+			    height: 100px;
+			    background-color: yellow;
+			    margin:50px ;
+			}
+			div{
+			    width: 300px;
+			    height: 300px;
+			    background: red;
+			    position: absolute;
+			    right: 150px;
+			    top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+	    
+	    <!--拖放      被拖拽的元素   和目标元素-->
+	    <!--被拖拽元素的事件：
+	                         拖拽触发前：dragstart;
+	                         拖拽中：drag
+                                  拖拽触发结束：dragend; -->
+               
+               
+       <!--目标元素事件:
+                             鼠标进入目标元素的时候：dragenter
+                            进入目标    和离开目标之间 触发：dragover        
+                            离开目标元素：dragleave
+                           在目标元素上面释放鼠标:drop    
+                           -->
+                   
+                   
+<!--                   
+           阻止浏览器的默认行为：return   false;
+                    ev.preventDefault();
+           -->
+                            
+       
+            
+                             
+	    <ul>
+	    	<li draggable="true"></li>
+	    	<li draggable="true"></li>
+	    	<li draggable="false"></li>
+	    </ul>
+	    
+	    <div></div>
+	    <script type="text/javascript">
+	    	var ali=document.querySelectorAll('li')
+	    	var odiv=document.querySelector('div');
+	         for(var i=0;i<ali.length;i++){
+//	                                 拖拽开始前
+	             ali[i].ondragstart=function(){
+	                 this.style.background='red';
+	             }
+//	                             拖拽中
+                ali[i].ondrag=function(){
+                    this.style.background='blue';
+//                  console.log(123);
+                }
+//	                                 拖拽结束
+                ali[i].ondragend=function(){
+                    this.style.background='yellow';
+                }
+                
+//              鼠标进入目标元素的时候
+//              odiv.ondragenter=function(){
+//                  this.style.background='black';
+//              }
+                
+//               进入目标    和离开目标之间 触发
+                odiv.ondragover=function(ev){
+                    var ev=ev||window.event;
+                    ev.preventDefault();
+                    this.style.background='pink';
+                   
+//                  console.log("aa")
+                }
+                odiv.ondragleave=function(){
+                    this.style.background='red';
+                }
+                odiv.ondrop=function(){
+                    alert("ss");
+                }
+	         }
+	    </script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	    <!--地理位置：经度纬度-->
+	    <input type="button" name="" id="" value="地理位置" /><br />
+	    <textarea name="" rows="10" cols="30"></textarea>
+	    <script type="text/javascript">
+	    	var  oinp=document.querySelector('input');
+	    	var otext=document.querySelector('textarea');
+	    	oinp.onclick=function(){
+	    	    //navigator.geolocation
+	    	    //getCurrentPosition   具体获取某些信息的
+	    	    //三个参数     请求成功的函数，请求失败的函数，数据收集
+	    	    navigator.geolocation.getCurrentPosition(function(position){
+	    	        otext.value+="经度:"+position.coords.longitude+'\n';
+	    	        otext.value+="纬度:"+position. coords.latitude+'\n';
+	    	        otext.value+="准确度:"+position.coords.accuracy+'\n';
+	    	        otext.value+="海拔:"+position.coords.altitude+'\n';
+	    	        otext.value+="海拔准确度:"+position. coords.altitudeAcuracy
++'\n';
+	    	        otext.value+="行进方向:"+position. coords.heading
++'\n';
+	    	        otext.value+="地面速度:"+position.coords.speed+'\n';
+	    	        otext.value+="时间戳:"+new Date(position.timestamp)+'\n';
+	    	    },function(err){
+	    	        console.log(err.code)
+	    	         
+//	    	              失败编号:code
+//	    	        0:不包括其他错误编号中的错误
+//	    	        1:用户拒绝浏览器获取位置信息
+//	    	        2:尝试获取用户信息,但失败了
+//	    	        3:设置了timeout值,获取位置超时了
+	    	    },{
+	    	        //延迟时间
+	    	        timeout:100,
+	    	    })
+	    	    
+	    	};
+	    </script>
+	</body>
+</html>

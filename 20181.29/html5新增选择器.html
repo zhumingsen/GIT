@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+	    <ul class="ul1" id="ul2">
+	    	<li>你好</li>
+	    	<li>你好</li>
+	    </ul>
+	    <ul class="ul1" id="ul3">
+            <li>你好</li>
+            <li>你好</li>
+        </ul>
+	    <script type="text/javascript">
+	    
+//	    ie  678    不支持      新增标签也不支持
+	    
+
+//	    新增选择器	querySelector(标签   class名  id名)   
+//      querySelector(标签   class名  id名)   获取的单个元素
+//      var oul=document.querySelector('.ul1')
+//      oul.style.background='red';
+
+//       querySelectorAll  获取所有元素
+        
+        var oul=document.querySelectorAll('.ul1');
+        for (var i=0;i<oul.length;i++){
+        oul[i].style.background='red';
+        }
+
+            
+	    </script>
+	</body>
+</html>

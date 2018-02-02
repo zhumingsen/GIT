@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	    <div class="box1  box2 box3" id="box"></div>
+	    <script type="text/javascript">
+	    	var oDiv=document.querySelector('#box');
+//	    	oDiv.classList   获取class集合
+	    	console.log(oDiv.classList);
+//	    	add():添加class方法
+//          oDiv.classList.add('box4');
+
+//          toggle() 切换class    元素本身有该class名   就删除   没有就添加
+            oDiv.classList.toggle('box1');
+            oDiv.classList.toggle('box5');
+            
+	    </script>
+	</body>
+</html>

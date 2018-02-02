@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+			    width: 412px;
+			    height: 412px;
+			    padding: 50px;
+			    border: 1px solid #000;
+			    margin: 100px auto;
+			    position: relative;
+                transform-style: preserve-3d;
+                perspective: 200px;
+                /*perspective-origin: bottom left ;*/
+			}
+			.big_box{
+                width: 412px;
+                height: 412px;
+                transform-style: preserve-3d;
+                perspective-origin:bottom left;
+            }
+			.box1{
+			    width: 100px;
+			    height: 100px;
+			    /*border: 1px solid #000000;*/
+			    position: absolute;
+			    top: 0;
+			    left:150px;
+			    transform:rotateX(90deg);
+			    transform-origin:bottom;
+			    background: greenyellow;
+			}
+			.box2{
+                width: 100px;
+                height: 100px;
+                /*border: 1px solid #000000;*/
+                position: absolute;
+                top:100px;
+                left: 50px;
+                transform: rotateY(-90deg);
+                transform-origin:right;
+			    background: yellowgreen;
+                
+            }
+            .box3{
+                width: 100px;
+                height: 100px;
+                /*border: 1px solid #000000;*/
+                position: absolute;
+                top: 100px;
+                left: 150px;
+			    background: blanchedalmond;
+                
+            }
+            .box4{
+                width: 100px;
+                height: 100px;
+                /*border: 1px solid #000000;*/
+                position: absolute;
+                top: 100px;
+                left: 250px;
+                transform: rotateY(90deg);
+                transform-origin:left;
+			    background: blue;
+                
+            }
+            .box5{
+                width: 100px;
+                height: 100px;
+                /*border: 1px solid #000000;*/
+                position: absolute;
+                top: 200px;
+                left: 150px;
+                transform: rotateX(-90deg);
+                transform-origin:top;
+			    background: yellow;
+                
+            }
+            .box6{
+                width: 100px;
+                height: 100px;
+                /*border: 1px solid #000000;*/
+                position: absolute;
+                top:100px;
+                left:150px;
+                transform: translateZ(100px);
+			    background: brown;
+               transform:  translateZ(-100px)  rotateY(180deg);
+            }
+            
+            .box:hover .big_box {
+                transform-origin: center center -50px;
+                transform: rotateY(180deg);
+                transition: 1s;
+            }
+		</style>
+	</head>
+	<body>
+	    <div class="box">
+	        <div class="big_box">
+    	        <div class="box1">1</div>
+    	        <div class="box2">2</div>
+    	        <div class="box3">3</div>
+    	        <div class="box4">4</div>
+    	        <div class="box5">5</div>
+    	        <div class="box6">6</div>
+	        </div>
+	    </div>
+	</body>
+</html>

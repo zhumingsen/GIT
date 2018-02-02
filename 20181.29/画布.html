@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{background: black;}
+			#canvas{
+			    background:white;
+			}
+		</style>
+	</head>
+	<body>
+	    <canvas id="canvas" width="400" height="400"></canvas>
+	    <script type="text/javascript">
+	    	var oc=document.querySelector('canvas');
+//	    	绘制2d环境
+            var oGc=oc.getContext('2d');
+            //绘制方块    fillRect(L,T,W,H)    默认黑色
+//          oGc.fillRect(10,10,100,100)
+
+            //绘制带边框的方块    strokeStyle
+//          边框颜色
+//          oGc.fillStyle='red';
+//          //线宽
+//          oGc.lineWidth='5';
+////          填充颜色
+//          oGc.fillStyle='black';
+////          绘制 边框方块
+//          oGc.strokeStyle(10,10,100,100);      
+
+
+//                      画个三角形
+//          绘制路径:   开始绘制 beginPath()
+    //                 移动绘制目标点   moveTo();
+    //                 移动轨迹    lineTo();
+    //                  结束绘制   closePath();
+    //                   绘制线条         strok();
+            
+//          oGc.beginPath();
+//          oGc.lineWidth='5';
+//          oGc.strokeStyle='green';
+//          oGc.fillStyle='red'
+//          oGc.moveTo(100,100);
+//          oGc.lineTo(200,200);
+//          oGc.lineTo(300,200)
+//          oGc.closePath();
+//          oGc.fill();
+//          oGc.stroke();
+            
+//          作业     直角    等边
+            oGc.save();     //保存路径
+            oGc.beginPath();    //开始绘制
+            oGc.lineWidth='2';   //线条宽度
+            oGc.fillStyle='pink';    //填充颜色
+            oGc.strokeStyle='yellow';   //线条颜色
+            oGc.moveTo(200,300);     //开始绘制起点
+            oGc.lineTo(400,300);      //绘制轨迹
+            oGc.lineTo(300,200);
+            oGc.closePath();        //结束绘制
+            oGc.fill();    //填充       
+            oGc.stroke();           //绘制线条
+            oGc.restore();    //恢复路径
+            
+            
+             oGc.beginPath();
+             oGc.lineWidth='2';
+             oGc.fillStyle='red';
+            oGc.strokeStyle='blue';
+            oGc.moveTo(100,300);
+            oGc.lineTo(200,300);
+            oGc.lineTo(100,200);
+            oGc.closePath();
+            oGc.fill();
+            oGc.stroke();
+	    </script>
+	</body>
+</html>

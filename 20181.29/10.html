@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+            body{background: black;}
+            #canvas{
+                background:white;
+            }
+        </style>
+	</head>
+	<body>
+	    <canvas id="canvas" width="400" height="400"></canvas>
+	    <script type="text/javascript">
+	    	var oc=document.querySelector('canvas');
+	    	var oGc=oc.getContext('2d');            // 绘制2D环境
+	    	//rect(L,T,W,H);
+	    	oGc.beginPath();
+	    	oGc.fillStyle='yellow';
+	    	oGc.lineWidth='10';
+	    	oGc.strokeStyle='red';
+	    	oGc.lineJoin='round';     //bevel 棱角        //round 圆角
+	    	oGc.rect(100,100,100,100); 
+	    	oGc.closePath();
+	    	oGc.fill();
+	    	oGc.stroke();
+	    </script>
+	</body>
+</html>

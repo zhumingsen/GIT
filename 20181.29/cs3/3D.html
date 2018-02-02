@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		.box{
+		    width: 100px;
+		    height: 100px;
+		    padding: 50px;
+		    border: 1px solid #000;
+		    margin: 100px auto;
+		    transform-style: preserve-3d;
+		    perspective: 300px;
+		    /*perspective-origin: right bottom;*/
+		    
+		}
+		.box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            font:50px/100px "楷体";
+            /*transform-origin: top left;*/
+        }
+        .box:hover .box1{
+            transform: rotateZ(360deg);
+            transition: 1s;
+            transform: translateZ(-100px);
+            
+        }
+		</style>
+	</head>
+	<body>
+	    <!--
+	        css3
+	           建立3D空间
+	     transform-style:preserve-3d  父级盒子加；
+	           景深    近大远小
+	           旋转rotate()  rotateX()  rotateY()   rotateZ()
+	           
+	        景深基点  perspective-origin  从什么角度观看，默认正前方
+	     
+	     translate    偏移      translateX  translateY  translateZ()
+	           
+	        -->
+	        <div class="box">
+	            <div class="box1">前端</div>
+	        </div>
+	</body>
+</html>
+        

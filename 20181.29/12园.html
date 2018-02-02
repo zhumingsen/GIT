@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+            body{background: black;}
+            #canvas{
+                background:white;
+            }
+        </style>
+	</head>
+	<body>
+	    <canvas id="canvas" width="400" height="400"></canvas>
+        <script type="text/javascript">
+            var oc=document.querySelector('canvas');
+            var oGc=oc.getContext('2d');
+            //绘制圆     圆心    半径   周长   面积   Math.PI=π
+//          角度    0~360     顺时针     逆时针
+//          弧长(扇形)     弧度=角度*Math.PI/180;
+//          arc(圆心横坐标,圆心纵坐标,半径,起始弧度,结束弧度,逆时针true/顺时针false);\n
+            oGc.beginPath();
+            oGc.moveTo(200,200);
+            oGc.arc(200,200,150,0,-270*Math.PI/180,true);
+//          oGc.closePath();
+            oGc.stroke();
+            
+            oGc.beginPath();
+//          oGc.moveTo(200,200);
+            oGc.arc(200,275,75,-90*Math.PI/180,-270*Math.PI/180,true);
+//          oGc.closePath();
+            oGc.stroke();
+        </script>
+	</body>
+</html>

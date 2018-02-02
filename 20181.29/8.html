@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	    <div style="background: red;width: 300px;height: 300px;margin: 100px auto;">请将图片拖放此处</div>
+	       
+	</body>
+	<script type="text/javascript">
+		var odiv=document.querySelector('div');
+		odiv.ondragenter=function(){
+		    this.innerHTML='请松开鼠标';
+		}
+		odiv.ondragover=function(ev){
+		    var ev=ev||window.event;
+		    ev.preventDefault();
+		}
+		odiv.ondragleave=function(){
+            this.innerHTML='请将文件拖放此处';
+        }
+		odiv.ondrop=function(){
+		    var ev=ev||window.event;
+            ev.preventDefault();
+            
+            var fs=ev.dataTransfer.files;
+//          读取文件
+            var fd=new FileReader();
+//          读取文件里面的内容
+            fd.readAsDataURL(fs[0]);
+            //  如果读取成功    onload事件
+            fs.onload=function(){
+//              console.log(this.result)
+
+            var img1=document.createElement('img');
+            img1.scr=this.result;
+            document.body.appendChild(img1);
+            }
+		}
+	</script>
+</html>

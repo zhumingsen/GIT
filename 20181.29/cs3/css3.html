@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			input[type='text']{       /*以type值*/
+			    background: red;
+			}
+			input[value=a1]{          /*以value值*/
+			    background: black;
+			}
+			input[value^=b]{         /*以b开始的*/
+			    background: yellow;
+			}
+			input[value$='3']{       /*以3结尾的*/
+			    background: orange;
+			}
+			input[value*=s]{        /*包含s的*/
+			    background: pink;
+			}
+			
+			/*=    完全等于
+			^=以什么开始
+			$=以什么结束
+			*=包含某些*/
+		</style>
+	</head>
+	<body>
+	    <!--选择器 : 标签  群组  子代   id  class-->
+	    <!--css3属性选择器-->
+	    <input type="text" name="" id="" value="a1" />
+	    <input type="text" name="" id="" value="a2" />
+	    <input type="text" name="" id="" value="bs3" />
+	    <input type="text" name="" id="" value="b43" />
+	    <input type="password" name="" id="" value="as5" />
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+			    width: 200px;
+			    height: 200px;
+			    background: red;
+			    transition: 1s width,1s 5s height;
+			    font-size: 50px;
+			}
+			div:hover{
+			    width: 1000px;
+			    height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+	    <!--css的过渡    
+	   transition  4个参数    没有顺序可言
+	      过渡时间    单位秒
+	      过渡样式     宽   高   背景    ....
+	      过渡形式      ease (默认值) 逐渐变慢     linear 匀速      ease-in  加速     ease-out减速    ease-in-out  先加速后减速
+	      延迟时间    单位秒     transition: 1s width,1s 5s height;      5s是延时时间
+	    -->
+	    <div>撒大声地发多少第三方</div>
+	</body>
+</html>

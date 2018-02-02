@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	    GIT 存储在本地电脑
+	    版本管理工具
+        SVN    
+	    
+	    GITHUB 需连网   存储网络
+	    
+	    查看git状态     git  status
+	    从工作区 上传暂存区   git add 文件名    
+	       从暂存区上传版本库   git commit -m "文件描述"
+	    处于工作区 是红色     暂存区 绿色     版本库
+	    
+	    从工作区直接到版本库指令  前提：提交已经被提交过的文件
+	    git commit -a -m "版本描述"
+	    
+	    git diff   工作区暂存区对比
+	    git diff --cached   暂存区版本库对比
+	    git diff master(不一定)   工作区 版本库对比
+
+
+
+                 撤回
+         git reset HEAD 文件名/file    从暂存区 撤回工作
+         
+         git commit --amend  将上次提交的内容与本次与本次提交的内容合并    格式：git commit -m "描述名and描述名" --amend
+         
+         
+         git rm -f 文件名   (如果工作区、缓存区都有的话，全部进行删除)
+         git rm --cached 文件名 (如果工作区和暂存区都有的话，只删除暂存区，保留工作区)
+            
+            
+            
+          恢复
+          git  checkout   commit_id 文件名(将误删的工作区的文件从版本库中恢复)   commit_id不用全部写，截取一部分就可以
+          
+          
+          
+          git remote  查看远程仓库名称
+          git  remote -v
+          
+          git push 远程仓库名称   master(可换)        添加到GITHUB上面
+	</body>
+</html>

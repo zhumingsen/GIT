@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../swiper/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="京东.css"/>
+<script type="text/javascript">
+            //获取像素比
+            //console.log(window.devicePixelRatio);
+            var pixelRatio = 1 / window.devicePixelRatio;
+            //console.log(pixelRatio);
+            //通过js动态设置视口(viewport)
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        </script>
+        
+        <script type="text/javascript">
+            var html=document.getElementsByTagName('html')[0];
+            
+            //获取屏幕宽度
+            var pagewith=html.getBoundingClientRect().width;
+            
+            //屏幕宽度/固定数值=基准值
+            html.style.fontSize=pagewith/16+'px';
+            //1 rem=40px
+        </script>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../img/j.jpg"/></div>
+      <div class="swiper-slide"><img src="../img/j.jpg"/></div>
+      <div class="swiper-slide"><img src="../img/j.jpg"/></div>
+      <div class="swiper-slide"><img src="../img/j.jpg"/></div>
+    </div>
+     Add Pagination 
+    <div class="swiper-pagination"></div>
+  </div>
+      
+      <!--京东logo-->
+      <div class="box">
+          <div class="logo"><img src="../img/j2.jpg"/></div>
+          <div class="serach">
+              <input type="text" name="" id="" value="" />
+          </div>
+          <ul>
+          	<li><img src="../img/j4.jpg" alt="" /><span>分类</span></li>
+          	<li><img src="../img/j4.jpg" alt="" /><span>购物车</span></li>
+          	<li><img src="../img/j4.jpg" alt="" /><span>我的</span></li>
+          	<li><img src="../img/j4.jpg" alt="" /><span>充值</span></li>
+          	<li style="margin-right: 0;"><img src="../img/j4.jpg" alt="" /><span>彩票</span></li>
+          </ul>
+      </div>
+      <!--团购-->
+      <div class="tuan_gou">
+          <div class="left"><img src="../img/myzc.jpg"/></div>
+          <div class="right">
+              <div class="r_top"></div>
+              <div class="r_bottom"></div>
+          </div>
+      </div>
+      <!--电影-->
+      <div class="dianying"></div>
+      <!--专享优惠-->
+      <div class="youhui"></div>
+      <!--值得买-->
+      <div class="zhidemai">
+          <div class="zhidemai_top">值得买
+          <div class="zhidemai_bottom">
+              <div class="mamibaobei"></div>
+              <div class="zhidemai_right">
+                  <div class="zhidemai_one"></div>
+                  <div class="zhidemai_two"></div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!--耍大牌-->
+      <div class="shuadapai">
+          <div class="shuadapai_top"><p>耍大牌</p>
+              <div class="shuadapai_bottom">
+                  <div class="shuadapai_left"></div>
+                  <div class="shuadapai_right"></div>
+              </div>
+          </div>
+      </div>
+      <!--京东超市-->
+      <div class="chaoshi"><p>京东超市</p>
+          <div class="chaoshi_bottom"></div>
+      </div>
+      <!--生活家-->
+      <div class="zhidemai">
+          <div class="zhidemai_top">生活家
+          <div class="zhidemai_bottom ">
+              <div class="mamibaobei shenghuojia"></div>
+              <div class="zhidemai_right">
+                  <div class="zhidemai_one shenghuojia_one"></div>
+                  <div class="zhidemai_two shenghuojia_two"></div>
+              </div>
+          </div>
+          </div>
+      </div>
+      
+      <!--鞋帽-->
+      <div class="xiemao">
+          <ul>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          	<li><img src="../img/xiemao.jpg"/></li>
+          </ul>
+      </div>
+      <!--登录-->
+      <footer>
+          <div class="box1">
+              <p>登录<span>|</span>注册</p>
+              <h6>反馈<span>|</span>返回顶部</h6>
+          </div>
+          <div class="weibu"></div>
+      </footer>
+   <!--Swiper JS--> 
+  <script src="../swiper/swiper.min.js"></script>
+
+   <!--Initialize Swiper--> 
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+        
+    });
+  </script>
+</body>
+</html>

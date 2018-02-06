@@ -1,0 +1,20 @@
+.ula{
+    width: 550px;
+    height: 200px;
+    margin: 100px auto;
+    background: greenyellow;
+    list-style: none;
+    .img(1);
+    .img(@j)when(@j<11){
+        li:nth-of-type(@{j}){
+            list-style: none;
+            float: left;
+            margin: 20px;
+            margin-bottom: 10px;
+            width: 70px;
+            height: 70px;
+            background: url("../img1/@{j}.jpg");
+        }
+        .img(@j + 1);
+    }
+}

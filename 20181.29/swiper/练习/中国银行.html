@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<script type="text/javascript">
+            //获取像素比
+            //console.log(window.devicePixelRatio);
+            var pixelRatio = 1 / window.devicePixelRatio;
+            //console.log(pixelRatio);
+            //通过js动态设置视口(viewport)
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        </script>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="blink.css"/>
+		<link rel="stylesheet" type="text/css" href="../swiper.css"/>
+	</head>
+	<body>
+	    <!--<div class="box">-->
+	        <div class="box1">
+	            <div class="top">
+	                <a href="">简体中文</a>
+	                <a href="">繁体中文</a>
+	                <a href="">English</a>
+	            
+	            <div class="top_menu">
+	                <p class="top_service"><a href="">全球服务</a></p>
+	                <p class="top_network"><a href="">网点/ATM服务</a></p>
+	                
+	            </div>
+	            </div>
+	            <div class="heard">
+                    <div class="heard_top">
+                        <div class="logo">
+                            <a href=""></a>
+                        </div>
+                        <div class="heard_info">
+                            <p class="phone">
+                                服务热线：<span>95566</span>
+                            信用卡热线：<span>40066 95566</span>
+                            </p>
+                             <div class="input_bar">
+                            <input type="text" name="" id="" placeholder="请输入检索关键词" />
+                            <input type="button" class="input_btn" name="" id="" value="" />
+                        </div>
+                        </div>
+                       
+                    </div>
+                    <div class="heard_bottom">
+                         <ul>
+                         	<li><a style="color: #a71e32;" href="">首页</a></li>
+                         	<li><a href="">公司金融</a></li>
+                         	<li><a href="">个人金融</a></li>
+                         	<li><a href="">银行卡</a></li>
+                         	<li><a href="">金融市场</a></li>
+                         	<li><a href="">电子银行</a></li>
+                         	<li><a href="">投资者关系</a></li>
+                         	<li><a href="">关于中行</a></li>
+                         </ul>
+                    </div>
+                </div>
+                <!--<div class="banner">-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../img1/one.jpg"/></div>
+                        <div class="swiper-slide"><img src="../../img1/two.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="../../img1/three.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="../../img1/four.jpg"/></div>
+                    </div>
+	        <!--</div>-->
+	       </div>
+	       <div class="swiper-pagination"></div>
+	    </div>
+	    <script src="../swiper.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+	    	var myswiper=new Swiper('.swiper-container',{
+                //方向：水平 horizontal      垂直 vertical
+                direction:'horizontal',
+//              //循环
+//              loop:true,
+                //初始索引   0
+//              initialSlide:1,
+                //箭头
+//              nextButton:'.swiper-button-next',
+//              prevButton:'.swiper-button-prev',
+                //进度条
+//              scrollbar:'.swiper-scrollbar',
+                //手指离开后进行贴合的速度
+                speed:3000,
+                //自动轮播
+                autoplay:2000,
+                //无法拖动
+                onlyExternal:true,
+                //分页器
+                pagination:'.swiper-pagination',
+                //分页器的类型
+                paginationType:'bullets', //bullets       fraction 分数形式       progress 进度条形式
+                //分页器   点击
+//              paginationClickable:true,
+                //切换效果
+                effect:'fade', //slide    //fade 淡入淡出     //cube方块3d效果      //coverflow  3d流样式   //flip  3d翻转
+                
+            });
+	    </script>
+	</body>
+</html>

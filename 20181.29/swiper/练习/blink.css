@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+body {
+  background: #F2F2F2;
+}
+.box1 {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+.top {
+  width: 100%;
+  height: 34px;
+  background: #F2F2F2;
+}
+.top a {
+  margin-left: 1.5em;
+  font-size: 14px;
+}
+.top a:hover {
+  color: orange;
+}
+.top .top_menu {
+  width: 260px;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  margin-right: -19px;
+  font: 12px/26px Verdana, Geneva, sans-serif, "宋体";
+}
+.top .top_menu p {
+  font-family: "微软雅黑";
+  line-height: 29px;
+  background: url(../../img/boc2013_top_icon.png) no-repeat 0 -91px;
+  font-size: 14px;
+  text-indent: 0px;
+  padding-left: 26px;
+}
+.top .top_menu .top_service {
+  background-position: 21px -94px;
+}
+.top .top_menu .top_network {
+  background-position: 21px -135px;
+  margin-right: 1.5em;
+  margin-top: -28px;
+  margin-left: 96px;
+}
+.heard {
+  width: 980px;
+  height: 154px;
+  border: 1px solid #CCCCCC;
+  background: white;
+}
+.heard .heard_top {
+  height: 94px;
+  border-bottom: 3px solid  #a71e32;
+  margin: 0 1.5em;
+}
+.heard .heard_top .logo {
+  float: left;
+  width: 175px;
+  height: 49px;
+  display: inline;
+  margin: 23px 0 0px 0;
+  padding-bottom: 19px;
+}
+.heard .heard_top .logo a {
+  background: url(../../img/boc2013_logo.png) no-repeat;
+  display: block;
+  width: 175px;
+  height: 49px;
+}
+.heard .heard_top .heard_info {
+  float: right;
+  height: 29px;
+  margin-top: 46px;
+  font-size: 13px;
+  width: 580px;
+  margin-right: 15px;
+}
+.heard .heard_top .heard_info .phone {
+  background: url(../../img/boc2013_top_icon.png) no-repeat;
+  background-position: 0 4px;
+  float: left;
+  line-height: 29px;
+  margin: 0px;
+  color: #535353;
+  padding-left: 23px;
+}
+.heard .heard_top .heard_info .phone span {
+  color: #a71e32;
+  padding-right: 18px;
+}
+.heard .heard_top .heard_info .input_bar {
+  width: 218px;
+  height: 27px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  float: right;
+}
+.heard .heard_top .heard_info .input_bar input {
+  width: 186px;
+  border: 0;
+  height: 27px;
+  color: #535353;
+  vertical-align: middle;
+  background: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  float: left;
+}
+.heard .heard_top .heard_info .input_bar .input_btn {
+  background: url(../../img/boc2013_search1.png) no-repeat center 5px;
+  width: 28px;
+  height: 27px;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.heard .heard_bottom {
+  height: 58px;
+  position: relative;
+  z-index: 10;
+  line-height: 58px;
+  font-size: 16px;
+  color: #000;
+  clear: both;
+}
+.heard .heard_bottom ul li {
+  float: left;
+  display: inline;
+  width: 12.5%;
+  text-align: center;
+  position: relative;
+}
+.heard .heard_bottom ul li a {
+  color: black;
+}
+.swiper-container {
+  margin-top: 15px;
+  position: relative;
+  width: 99.8%;
+  height: 379px;
+  z-index: 0;
+  background: white;
+}
+.swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 288px;
+}
+.com_box {
+  background: #fff;
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px #e5e5e5;
+  margin: 10px 0;
+}

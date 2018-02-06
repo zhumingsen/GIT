@@ -11,12 +11,17 @@
 	    
 	    GITHUB 需连网   存储网络
 	    
-	    查看git状态     git  status
-	    从工作区 上传暂存区   git add 文件名    
-	       从暂存区上传版本库   git commit -m "文件描述"
-	    处于工作区 是红色     暂存区 绿色     版本库
+	    git clone 链接       克隆GITHUB
+	    git config --global user.name "GITHUB用户名"    配置用户名
+	    git  config --global user.email "GITHUB邮件箱"    配置邮箱
+	    git config --list    查看配置状态
 	    
-	    从工作区直接到版本库指令  前提：提交已经被提交过的文件
+	       查看git状态     git  status
+	       从工作区 上传暂存区   git add 文件名    
+	       从暂存区上传版本库   git commit -m "文件描述"
+	       处于工作区 是红色     暂存区 绿色     版本库
+	    
+	        从工作区直接到版本库指令  前提：提交已经被提交过的文件
 	    git commit -a -m "版本描述"
 	    
 	    git diff   工作区暂存区对比
@@ -26,7 +31,8 @@
 
 
                  撤回
-         git reset HEAD 文件名/file    从暂存区 撤回工作
+         git reset HEAD 文件名/file    从暂存区 撤回工作区
+         
          
          git commit --amend  将上次提交的内容与本次与本次提交的内容合并    格式：git commit -m "描述名and描述名" --amend
          

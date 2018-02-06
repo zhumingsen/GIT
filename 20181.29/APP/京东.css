@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.35rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 16rem;
+  height: 6rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 0.45rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 16rem;
+  height: 7.25rem;
+  background: white;
+  border-bottom: 1px solid #000;
+}
+.box .logo img {
+  width: 5.425rem;
+  height: 1.5rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.35rem;
+}
+.box .serach {
+  width: 12.25rem;
+  height: 1.3rem;
+  margin: 0.55rem auto;
+  background-size: 1.625rem 1.3rem;
+  border-radius: 30px;
+}
+.box .serach input {
+  width: 100%;
+  height: 100%;
+  font-size: 0.75rem;
+  border-radius: 30px;
+  padding-left: 0.25rem;
+  background: url(../img/j3.jpg) no-repeat 10.825rem 0;
+  background-size: 1.5rem;
+}
+.box ul {
+  width: 15.375rem;
+  height: 2.75rem;
+  padding-left: 0.625rem;
+}
+.box ul li {
+  width: 2.2rem;
+  height: 2.75rem;
+  float: left;
+  margin-right: 1rem;
+}
+.box ul li:hover {
+  cursor: pointer;
+}
+.box ul li span {
+  font-size: 0.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.box ul li img {
+  display: block;
+  width: 2.2rem;
+  height: 1.925rem;
+}
+.tuan_gou {
+  width: 100%;
+  height: 7.75rem;
+  background: white;
+  border-bottom: 1px solid #000;
+}
+.tuan_gou .left {
+  width: 7.875rem;
+  height: 7.825rem;
+  float: left;
+}
+.tuan_gou .left img {
+  width: 100%;
+  height: 7.725rem;
+}
+.tuan_gou .left img:hover {
+  cursor: pointer;
+}
+.tuan_gou .right {
+  width: 7.95rem;
+  height: 7.75rem;
+  float: right;
+}
+.tuan_gou .right .r_top {
+  width: 100%;
+  height: 3.8rem;
+  background: url(../img/jdtg.jpg) no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.tuan_gou .right .r_top:hover {
+  cursor: pointer;
+}
+.tuan_gou .right .r_bottom {
+  width: 100%;
+  height: 3.8rem;
+  background: url(../img/cuxiao.jpg) no-repeat;
+  background-size: 100%;
+}
+.tuan_gou .right .r_bottom:hover {
+  cursor: pointer;
+}
+.dianying {
+  width: 100%;
+  height: 5.8rem;
+  background: url(../img/dian.jpg) no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid #000;
+}
+.youhui {
+  width: 100%;
+  height: 9.2rem;
+  background: url(../img/youhui.jpg) no-repeat;
+  background-size: 100%;
+}
+.zhidemai {
+  width: 16rem;
+  height: 10.725rem;
+}
+.zhidemai .zhidemai_top {
+  width: 100%;
+  background: #CCCCCC;
+  font-size: 0.85rem;
+  text-align: center;
+  padding-top: 40px;
+}
+.zhidemai .zhidemai_bottom {
+  width: 100%;
+  height: 8.825rem;
+}
+.zhidemai .zhidemai_bottom .mamibaobei,
+.zhidemai .zhidemai_bottom .shenghuojia {
+  float: left;
+  width: 7.925rem;
+  height: 100%;
+  background: url(../img/mamibaobei.jpg) no-repeat;
+  background-size: 100% ;
+}
+.zhidemai .zhidemai_bottom .shenghuojia {
+  background: url(../img/tuangou.jpg) no-repeat;
+  background-size: 100% 8.75rem;
+}
+.zhidemai .zhidemai_bottom .zhidemai_right {
+  float: right;
+  width: 7.925rem;
+  height: 100%;
+}
+.zhidemai .zhidemai_bottom .zhidemai_right .zhidemai_one,
+.zhidemai .zhidemai_bottom .zhidemai_right .shenghuojia_one {
+  width: 100%;
+  height: 4.4rem;
+  background: url(../img/jiajujiafang.jpg) no-repeat;
+  background-size: 100%;
+}
+.zhidemai .zhidemai_bottom .zhidemai_right .shenghuojia_one {
+  background: url(../img/shenghuo.jpg) no-repeat;
+  background-size: 100% 4.325rem;
+}
+.zhidemai .zhidemai_bottom .zhidemai_right .zhidemai_two,
+.zhidemai .zhidemai_bottom .zhidemai_right .shenghuojia_two {
+  width: 100%;
+  height: 4.4rem;
+  background: url(../img/jiadian.jpg) no-repeat;
+  background-size: 100%;
+}
+.zhidemai .zhidemai_bottom .zhidemai_right .shenghuojia_two {
+  background: url(../img/lvxing.jpg) no-repeat;
+  background-size: 100% 4.325rem;
+}
+.shuadapai {
+  width: 100%;
+  height: 10.75rem;
+  text-align: center;
+}
+.shuadapai .shuadapai_top {
+  width: 100%;
+  height: 2rem;
+  background: #ccc;
+}
+.shuadapai .shuadapai_top p {
+  width: 100%;
+  height: 1.25rem;
+  text-align: center;
+  padding-top: 0.75rem;
+  font-size: 0.875rem;
+}
+.shuadapai .shuadapai_bottom {
+  width: 100%;
+  height: 8.65rem;
+}
+.shuadapai .shuadapai_bottom .shuadapai_left {
+  float: left;
+  width: 7.975rem;
+  height: 100%;
+  background: url(../img/dijia.jpg) no-repeat, url(../img/jingpin.jpg) 0 4.5rem no-repeat;
+  background-size: 100%;
+}
+.shuadapai .shuadapai_bottom .shuadapai_right {
+  float: right;
+  width: 7.95rem;
+  height: 100%;
+  background: url(../img/xiuchang.jpg) no-repeat;
+  background-size: 100%;
+}
+.chaoshi {
+  width: 100%;
+  height: 9.25rem;
+  text-align: center;
+}
+.chaoshi p {
+  width: 100%;
+  height: 1.25rem;
+  text-align: center;
+  padding-top: 0.75rem;
+  font-size: 0.875rem;
+}
+.chaoshi .chaoshi_bottom {
+  width: 100%;
+  height: 7.175rem;
+  background: url(../img/chaoshi.jpg) no-repeat;
+  background-size: 100%;
+}
+.xiemao {
+  width: 100%;
+  height: 10.925rem;
+}
+.xiemao ul {
+  width: 15.475rem;
+  height: 10.6rem;
+  margin: 0.35rem auto;
+}
+.xiemao ul li {
+  width: 7.625rem;
+  height: 3.5rem;
+  float: left;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.xiemao ul li img {
+  width: 7.625rem;
+  height: 3.5rem;
+  display: block;
+  margin: 0.05rem 0.05rem;
+}
+footer {
+  width: 100%;
+  height: 3.1rem;
+  background: red;
+}
+footer .box1 {
+  width: 100%;
+  height: 0.95rem;
+  background: yellow;
+}
+footer .box1 p {
+  width: 50%;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  font-size: 0.5rem;
+  float: left;
+}
+footer .box1 p span {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+footer .box1 h6 {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+  float: right;
+}
+footer .box1 h6 span {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+footer .weibu {
+  width: 100%;
+  height: 2.175rem;
+  background: url(../img/weibu.jpg) no-repeat;
+  background-size: 100% ;
+}

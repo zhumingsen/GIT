@@ -1,0 +1,115 @@
+ul,li{
+    list-style: none;
+}
+//1.关于注释
+
+//2.设置变量   var a=10
+    //less 定义变量  通过@符号进行定义
+    @bgc:red;
+    @w:200px;
+    @h:300px;
+    @num:500;
+    @num1:400.001;
+    body{
+        background:@bgc;
+        width:@w;
+        height:@h;
+    }
+    
+//3.如何加单位  unit()
+//向上取整  ceil()    向下取整 floor()
+//round()四舍五入     abs() 取绝对值
+div{
+    width:unit(@num,px);
+    height:ceil(@num1,px);
+}
+
+//4.嵌套使用      表示它父级   &
+.ul1{
+    width: 100%;
+    .list1{
+        background: @bgc;
+        .text{
+            color: @bgc;
+            &:hover{
+                color: green;
+            }
+        }
+    }
+}
+.content{
+     .left{
+         .top{
+             a{
+                 background: yellow;
+                 &:hover{
+                     background: red;
+                 }
+             }
+         }
+         .bottom{
+             span{
+                 background: blue;
+                 &:hover{
+                     background: greenyellow;
+                 }
+             }
+         }
+     }
+     .right{
+         .top{
+             p{
+                 color: yellow;
+                 &:hover{
+                     background: blanchedalmond;
+                 }
+             }
+         }
+         .bottom{
+             h3{
+                 color: deepskyblue;
+                 &:hover{
+                     background: royalblue;
+                 }
+             }
+         }
+     }
+}
+//less  函数
+//  js function(){}  fn
+//less 中  .函数的名称(参数1，参数2)
+#div1{
+    width: @h;
+    height: @h;
+    background: @bgc;
+    .border;
+}
+.border(@a:10px,@b:solid,@c:#000){
+    border: @a @b @c;
+}
+// 6.函数+判断
+#div2{
+    width: @w;
+    height: @h;
+    background: @bgc;
+    .border1(5px,solid,#000);
+}
+.border1(@a,@b,@c)when(@a>10){
+    border:@a @b @c;
+}
+//7.  替换名称
+@color:background;
+#div3{
+    @{color}:@bgc;
+}
+//  8.循环 loop
+.box(4);
+.box(@i)when(@i>0){
+    .p:nth-of-type(@{i}){
+       width: @i*100px; 
+       height: @i*100px;
+    }
+    .box(@i - 1);
+}
+
+
